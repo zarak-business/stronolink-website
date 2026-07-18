@@ -60,7 +60,7 @@ export function ServicesSection() {
                     autoPlay
                     loop
                     playsInline
-                    preload="auto"
+                    preload="metadata"
                   >
                     <source src={card.videoUrl} type="video/mp4" />
                   </video>

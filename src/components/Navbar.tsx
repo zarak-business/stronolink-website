@@ -1,5 +1,6 @@
 import { ArrowRight, Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,7 +14,7 @@ export function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-black border-b border-white/5">
-      <div className="w-full flex items-center justify-between px-6 md:px-12 py-5 md:py-8">
+      <div className="w-full flex items-center justify-between px-6 md:px-12 py-3 md:py-5">
         
         {/* Left Side: Logo */}
         <div className="flex-1 flex items-center justify-start z-10">
@@ -54,9 +55,33 @@ export function Navbar() {
         <div className="flex-1 flex md:hidden justify-end z-20">
           <button 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="text-white p-2"
+            className="text-white p-2 relative w-11 h-11 flex items-center justify-center"
           >
-            {isMobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+            <AnimatePresence mode="wait">
+              {isMobileMenuOpen ? (
+                <motion.div
+                  key="close"
+                  initial={{ rotate: -90, opacity: 0 }}
+                  animate={{ rotate: 0, opacity: 1 }}
+                  exit={{ rotate: 90, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute"
+                >
+                  <X className="w-7 h-7" />
+                </motion.div>
+              ) : (
+                <motion.div
+                  key="menu"
+                  initial={{ rotate: 90, opacity: 0 }}
+                  animate={{ rotate: 0, opacity: 1 }}
+                  exit={{ rotate: -90, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute"
+                >
+                  <Menu className="w-7 h-7" />
+                </motion.div>
+              )}
+            </AnimatePresence>
           </button>
         </div>
 

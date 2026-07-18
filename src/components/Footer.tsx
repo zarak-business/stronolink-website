@@ -2,7 +2,7 @@ export function Footer() {
   return (
     <footer className="bg-black text-white text-sm pt-16 pb-8 md:pt-24 md:pb-12 px-6 md:px-12 relative overflow-hidden">
       {/* Glow restored to the top */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] md:w-[1000px] h-[200px] md:h-[300px] bg-[radial-gradient(ellipse_at_top,_rgba(147,51,234,0.3)_0%,_transparent_70%)] pointer-events-none z-0" />
+      <div className="absolute top-[-50px] left-1/2 -translate-x-1/2 w-[400px] md:w-[1000px] h-[250px] md:h-[400px] bg-[radial-gradient(ellipse_at_center,_rgba(147,51,234,0.25)_0%,_transparent_70%)] pointer-events-none z-0" />
       
       <div className="max-w-6xl mx-auto relative z-10 flex flex-col gap-12 md:gap-16">
         
