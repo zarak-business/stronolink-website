@@ -9,13 +9,13 @@ export function Navbar() {
   ]
 
   return (
-    <nav className="absolute top-0 left-0 w-full z-50">
-      <div className="w-full flex items-center justify-between px-6 md:px-12 py-3 md:py-4">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-black/60 backdrop-blur-lg border-b border-white/5">
+      <div className="w-full flex items-center justify-between px-6 md:px-12 py-4 md:py-6">
         
         {/* Left Side: Logo */}
         <div className="flex-1 flex items-center justify-start z-10">
           <a href="/">
-            <img src="/logo.png" alt="Stronolink Logo" className="h-8 md:h-10 lg:h-12 w-auto object-contain" />
+            <img src="/logo.png" alt="Stronolink Logo" className="h-10 md:h-12 lg:h-14 w-auto object-contain" />
           </a>
         </div>
 

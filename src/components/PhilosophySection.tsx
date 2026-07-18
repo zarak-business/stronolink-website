@@ -7,18 +7,20 @@ export function PhilosophySection() {
 
   return (
     <section className="bg-black py-28 md:py-40 px-6 overflow-hidden relative">
-      {/* Subtle purple gradient background fading perfectly before boundaries */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-purple-600/10 rounded-full blur-[120px] pointer-events-none" />
+      {/* Removed container-wide glow in favor of text-specific glow */}
       
-      <div className="max-w-6xl mx-auto" ref={ref}>
-        <motion.h2
-          initial={{ opacity: 0, y: 40 }}
+      <div className="max-w-6xl mx-auto relative z-10" ref={ref}>
+        <div className="relative mb-16 md:mb-24">
+          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[300px] md:w-[500px] h-[100px] bg-purple-600/70 rounded-full blur-[80px] pointer-events-none z-0" />
+          <motion.h2
+            initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
           transition={{ duration: 0.8 }}
-          className="text-5xl md:text-7xl lg:text-8xl text-white tracking-tight mb-16 md:mb-24"
-        >
-          Vision <span className="font-display italic text-white/40">x</span> Execution
-        </motion.h2>
+            className="relative z-10 text-5xl md:text-7xl lg:text-8xl text-white tracking-tight"
+          >
+            Vision <span className="font-display italic text-white/40">x</span> Execution
+          </motion.h2>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <motion.div

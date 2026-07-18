@@ -26,15 +26,17 @@ export function ProcessSection() {
 
   return (
     <section id="process" className="bg-black py-24 md:py-32 px-4 md:px-6 w-full flex justify-center relative overflow-hidden">
-      {/* Glow sized to fade to 0% opacity naturally before reaching clipped section boundaries */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-purple-600/30 rounded-full blur-[100px] pointer-events-none" />
+      {/* Removed container-wide glow */}
 
       <div className="max-w-7xl w-full flex flex-col items-center gap-16 md:gap-20 relative z-10">
         
         {/* Heading */}
-        <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-center">
-          The Roadmap: From First Call to Launch
-        </h2>
+        <div className="relative w-full flex justify-center">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[600px] h-[100px] bg-purple-600/70 rounded-full blur-[80px] pointer-events-none z-0" />
+          <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-center relative z-10">
+            The Roadmap: From First Call to Launch
+          </h2>
+        </div>
 
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full">

@@ -19,6 +19,21 @@ export function TextWithImageSection() {
             $100k+ in revenue generated for clients.
           </motion.h2>
           
+          {/* Mobile Image */}
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            className="block md:hidden relative w-full aspect-square rounded-3xl overflow-hidden bg-[#111]"
+          >
+            <img 
+              src="/office-team.png" 
+              alt="Stronolink team working" 
+              className="w-full h-full object-cover"
+            />
+          </motion.div>
+          
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -56,7 +71,7 @@ export function TextWithImageSection() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="relative w-full aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden bg-[#111]"
+          className="hidden md:block relative w-full aspect-[4/3] rounded-3xl overflow-hidden bg-[#111]"
         >
           <img 
             src="/office-team.png" 
