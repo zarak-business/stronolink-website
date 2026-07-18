@@ -25,7 +25,7 @@ export function HeroSection() {
         {/* Overlays */}
         {/* Removed noise overlay for a cleaner look */}
 
-        <div className="absolute top-[12%] md:top-[12%] left-0 right-0 z-30 flex flex-col items-center justify-center px-6 w-full max-w-4xl mx-auto text-center">
+        <div className="absolute top-[8%] md:top-[12%] left-0 right-0 z-30 flex flex-col items-center justify-center px-6 w-full max-w-4xl mx-auto text-center">
           
           <div className="w-full">
             <motion.h1 
