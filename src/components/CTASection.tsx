@@ -7,10 +7,13 @@ export function CTASection() {
       <div className="max-w-6xl w-full bg-black/80 rounded-2xl md:rounded-[2rem] p-12 md:p-24 flex flex-col items-center text-center gap-8 md:gap-10 relative overflow-hidden border border-white/[0.05]">
         
         {/* Left Purple Glow */}
-        <div className="absolute top-0 left-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-purple-600/20 rounded-full blur-[80px] md:blur-[120px] -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
+        <div className="absolute top-0 left-0 w-[400px] md:w-[800px] h-[400px] md:h-[800px] bg-[radial-gradient(circle_at_center,_rgba(147,51,234,0.25)_0%,_transparent_70%)] -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
         
         {/* Right Purple Glow */}
-        <div className="absolute bottom-0 right-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-purple-900/20 rounded-full blur-[80px] md:blur-[120px] translate-x-1/3 translate-y-1/3 pointer-events-none" />
+        <div className="absolute bottom-0 right-0 w-[400px] md:w-[800px] h-[400px] md:h-[800px] bg-[radial-gradient(circle_at_center,_rgba(88,28,135,0.25)_0%,_transparent_70%)] translate-x-1/3 translate-y-1/3 pointer-events-none" />
+        
+        {/* Center Text Glow */}
+        <div className="absolute top-1/2 left-1/2 w-[400px] md:w-[800px] h-[300px] md:h-[400px] bg-[radial-gradient(ellipse_at_center,_rgba(147,51,234,0.45)_0%,_transparent_70%)] -translate-x-1/2 -translate-y-1/2 pointer-events-none z-0" />
 
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}

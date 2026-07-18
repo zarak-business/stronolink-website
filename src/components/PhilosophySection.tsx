@@ -11,7 +11,7 @@ export function PhilosophySection() {
       
       <div className="max-w-6xl mx-auto relative z-10" ref={ref}>
         <div className="relative mb-16 md:mb-24">
-          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[300px] md:w-[500px] h-[100px] bg-purple-600/70 rounded-full blur-[80px] pointer-events-none z-0" />
+          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[400px] md:w-[700px] h-[300px] md:h-[400px] bg-[radial-gradient(ellipse_at_center,_rgba(147,51,234,0.45)_0%,_transparent_70%)] pointer-events-none z-0" />
           <motion.h2
             initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}

@@ -25,12 +25,12 @@ export function TextWithImageSection() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="block md:hidden relative w-full aspect-square rounded-3xl overflow-hidden bg-[#111]"
+            className="block md:hidden relative w-full rounded-3xl overflow-hidden bg-[#111]"
           >
             <img 
               src="/office-team.png" 
               alt="Stronolink team working" 
-              className="w-full h-full object-cover"
+              className="w-full h-auto object-contain"
             />
           </motion.div>
           
@@ -71,12 +71,12 @@ export function TextWithImageSection() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="hidden md:block relative w-full aspect-[4/3] rounded-3xl overflow-hidden bg-[#111]"
+          className="hidden md:block relative w-full rounded-3xl overflow-hidden bg-[#111]"
         >
           <img 
             src="/office-team.png" 
             alt="Stronolink team working" 
-            className="w-full h-full object-cover"
+            className="w-full h-auto object-contain"
           />
         </motion.div>
 
