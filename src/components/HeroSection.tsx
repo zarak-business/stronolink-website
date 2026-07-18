@@ -4,7 +4,7 @@ import { Navbar } from './Navbar';
 
 export function HeroSection() {
   return (
-    <section className="relative h-[120vh] w-full pt-16 md:pt-20">
+    <section className="relative h-[90vh] md:h-[120vh] w-full pt-16 md:pt-20">
       {/* Navbar (Truly full-width, overlaying the entire screen) */}
       <Navbar />
 
@@ -16,6 +16,7 @@ export function HeroSection() {
           loop
           muted
           playsInline
+          preload="auto"
           className="absolute inset-0 w-full h-full object-cover object-top z-0"
         >
           <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260714_113715_c7e0daa0-8bdd-4486-a2da-040901f8f0ea.mp4" type="video/mp4" />

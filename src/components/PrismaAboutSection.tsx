@@ -21,7 +21,7 @@ export function PrismaAboutSection() {
         <div className="max-w-xl mx-auto">
           <ScrollTextReveal 
             text="Over the last seven years, I have worked with a premier data firm based in Philadelphia that serves some of the top pharmaceutical companies in the world. Today, I leverage that enterprise-level experience to build automated growth systems for service-based businesses nationwide."
-            className="text-[#DEDBC8] text-xs sm:text-sm md:text-base leading-relaxed"
+            className="text-[#DEDBC8] text-base md:text-lg leading-relaxed"
           />
         </div>
 

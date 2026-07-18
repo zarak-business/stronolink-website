@@ -28,7 +28,7 @@ export function TeamSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-3xl md:text-5xl lg:text-6xl text-white font-medium tracking-tight mb-6 whitespace-nowrap sm:whitespace-normal"
+            className="text-3xl md:text-5xl lg:text-6xl text-white font-medium tracking-tight mb-6"
           >
             AI became our superpower in 2023.
           </motion.h2>

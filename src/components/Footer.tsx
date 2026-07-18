@@ -2,7 +2,7 @@ export function Footer() {
   return (
     <footer className="bg-black text-white text-sm pt-16 pb-6 md:pt-20 px-6 md:px-12 relative overflow-hidden">
       {/* Glow expanded to the right, with the left edge securely anchored away from the logo */}
-      <div className="absolute top-[-100px] left-1/2 -translate-x-[250px] w-[800px] h-[150px] bg-purple-500/40 blur-[80px] pointer-events-none rounded-full" />
+      <div className="absolute top-[-100px] left-1/2 -translate-x-1/2 md:-translate-x-[250px] w-[300px] md:w-[800px] h-[100px] md:h-[150px] bg-purple-500/40 blur-[60px] md:blur-[80px] pointer-events-none rounded-full" />
       
       <div className="max-w-6xl mx-auto relative z-10">
         
