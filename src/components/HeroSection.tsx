@@ -25,14 +25,14 @@ export function HeroSection() {
         {/* Overlays */}
         {/* Removed noise overlay for a cleaner look */}
 
-        <div className="absolute top-[2%] md:top-[12%] left-0 right-0 z-30 flex flex-col items-center justify-center px-6 w-full max-w-4xl mx-auto text-center">
+        <div className="absolute top-[6%] md:top-[12%] left-0 right-0 z-30 flex flex-col items-center justify-center px-6 w-full max-w-4xl mx-auto text-center">
           
           <div className="w-full">
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="font-['Instrument_Serif'] text-[#1B133C] text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] leading-[0.95] tracking-tight text-center max-w-4xl mx-auto"
+              className="font-['Instrument_Serif'] text-[#1B133C] text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] leading-[0.95] tracking-tight text-center max-w-4xl mx-auto"
             >
               Stop Filming Ads. Stop Chasing Leads. Let AI Do Both.
             </motion.h1>
@@ -42,7 +42,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="text-[#1B133C] font-medium drop-shadow-md text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mt-5 sm:mt-6"
+            className="text-[#1B133C] font-medium drop-shadow-md text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mt-3 sm:mt-4 md:mt-6"
           >
             Skip the expensive video production crews and stop racing competitors for shared leads. Our fully managed AI system rapidly tests high-converting Meta ads and instantly books appointments on autopilot.
           </motion.p>
@@ -51,7 +51,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="mt-7 sm:mt-8"
+            className="mt-5 sm:mt-6 md:mt-8"
           >
             <a 
               href="https://cal.com/zarak-khan-5xsdci/30min"
