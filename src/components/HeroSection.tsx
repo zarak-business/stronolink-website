@@ -4,7 +4,7 @@ import { Navbar } from './Navbar';
 
 export function HeroSection() {
   return (
-    <section className="relative h-[90vh] md:h-[120vh] w-full pt-16 md:pt-20">
+    <section className="relative h-[75vh] md:h-[120vh] w-full pt-16 md:pt-20">
       {/* Navbar (Truly full-width, overlaying the entire screen) */}
       <Navbar />
 
