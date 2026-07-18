@@ -32,7 +32,7 @@ export function ProcessSection() {
         
         {/* Heading */}
         <div className="relative w-full flex justify-center">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] md:w-[800px] h-[300px] md:h-[400px] bg-[radial-gradient(ellipse_at_center,_rgba(147,51,234,0.45)_0%,_transparent_70%)] pointer-events-none z-0" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] md:w-[800px] h-[150px] md:h-[200px] bg-[radial-gradient(ellipse_at_center,_rgba(147,51,234,0.45)_0%,_transparent_70%)] pointer-events-none z-0" />
           <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-center relative z-10">
             The Roadmap: From First Call to Launch
           </h2>
