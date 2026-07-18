@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 export function TextWithImageSection() {
   return (
-    <section id="about" className="bg-black py-24 md:py-32 px-4 md:px-6 w-full flex justify-center relative overflow-hidden">
+    <section id="about" className="bg-black py-16 md:py-24 px-4 md:px-6 w-full flex justify-center relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(147,51,234,0.18)_0%,_transparent_70%)] pointer-events-none" />
       <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center relative z-10">
         

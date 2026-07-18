@@ -43,7 +43,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="text-[#1B133C]/70 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mt-5 sm:mt-6"
+            className="text-white font-medium drop-shadow-md text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mt-5 sm:mt-6"
           >
             Skip the expensive video production crews and stop racing competitors for shared leads. Our fully managed AI system rapidly tests high-converting Meta ads and instantly books appointments on autopilot.
           </motion.p>

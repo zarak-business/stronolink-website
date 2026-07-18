@@ -6,12 +6,12 @@ export function PhilosophySection() {
   const isInView = useInView(ref, { once: true, margin: "0px" });
 
   return (
-    <section className="bg-black py-28 md:py-40 px-6 overflow-hidden relative">
+    <section className="bg-black py-16 md:py-24 px-6 overflow-hidden relative">
       {/* Removed container-wide glow in favor of text-specific glow */}
       
       <div className="max-w-6xl mx-auto relative z-10" ref={ref}>
         <div className="relative mb-16 md:mb-24">
-          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[400px] md:w-[700px] h-[300px] md:h-[400px] bg-[radial-gradient(ellipse_at_center,_rgba(147,51,234,0.45)_0%,_transparent_70%)] pointer-events-none z-0" />
+          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[400px] md:w-[700px] h-[150px] md:h-[200px] bg-[radial-gradient(ellipse_at_center,_rgba(147,51,234,0.45)_0%,_transparent_70%)] pointer-events-none z-0" />
           <motion.h2
             initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}

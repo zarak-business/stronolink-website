@@ -29,7 +29,7 @@ export function LogoTicker() {
   ];
 
   return (
-    <section className="bg-black py-16 md:py-24 border-b border-white/[0.05] overflow-hidden">
+    <section className="bg-black py-10 md:py-16 border-b border-white/[0.05] overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         <p className="text-white text-lg md:text-xl mb-12 md:mb-16 tracking-wide font-medium">Powered By</p>
         

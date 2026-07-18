@@ -10,7 +10,7 @@ export function PrismaAboutSection() {
   ];
 
   return (
-    <section className="bg-black p-4 md:p-6 w-full flex justify-center items-center py-20 md:py-32">
+    <section className="bg-black p-4 md:p-6 w-full flex justify-center items-center py-16 md:py-24">
       <div className="bg-[#101010] rounded-2xl md:rounded-[2rem] w-full max-w-6xl p-8 sm:p-12 md:p-20 flex flex-col items-center text-center gap-12 md:gap-16">
 
         <WordsPullUpMultiStyle 

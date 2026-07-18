@@ -21,7 +21,7 @@ export function CaseStudiesSection() {
   ];
 
   return (
-    <section id="case-studies" className="bg-black py-24 md:py-32 px-4 md:px-6 w-full flex justify-center">
+    <section id="case-studies" className="bg-black py-16 md:py-24 px-4 md:px-6 w-full flex justify-center">
       <div className="max-w-7xl w-full flex flex-col items-center">
         
         {/* Header */}

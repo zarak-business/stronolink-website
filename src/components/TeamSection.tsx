@@ -17,7 +17,7 @@ export function TeamSection() {
   ];
 
   return (
-    <section className="bg-black py-24 md:py-32 px-6 overflow-hidden relative">
+    <section className="bg-black py-16 md:py-24 px-6 overflow-hidden relative">
       {/* Subtle purple gradient background fading perfectly before boundaries */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-purple-600/10 rounded-full blur-[120px] pointer-events-none" />
       

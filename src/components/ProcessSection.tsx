@@ -25,7 +25,7 @@ export function ProcessSection() {
   ];
 
   return (
-    <section id="process" className="bg-black py-24 md:py-32 px-4 md:px-6 w-full flex justify-center relative overflow-hidden">
+    <section id="process" className="bg-black py-16 md:py-24 px-4 md:px-6 w-full flex justify-center relative overflow-hidden">
       {/* Removed container-wide glow */}
 
       <div className="max-w-7xl w-full flex flex-col items-center gap-16 md:gap-20 relative z-10">

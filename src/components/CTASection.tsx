@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 export function CTASection() {
   return (
-    <section className="bg-black py-24 md:py-32 px-4 md:px-6 w-full flex justify-center">
+    <section className="bg-black py-16 md:py-24 px-4 md:px-6 w-full flex justify-center">
       <div className="max-w-6xl w-full bg-black/80 rounded-2xl md:rounded-[2rem] p-12 md:p-24 flex flex-col items-center text-center gap-8 md:gap-10 relative overflow-hidden border border-white/[0.05]">
         
         {/* Left Purple Glow */}

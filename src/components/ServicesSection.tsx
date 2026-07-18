@@ -29,7 +29,7 @@ export function ServicesSection() {
   ];
 
   return (
-    <section id="services" className="bg-black py-28 md:py-40 px-6 overflow-hidden relative">
+    <section id="services" className="bg-black py-16 md:py-24 px-6 overflow-hidden relative">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(147,51,234,0.06)_0%,_transparent_65%)] pointer-events-none" />
       
       <div className="max-w-7xl mx-auto relative z-10" ref={ref}>
