@@ -1,25 +1,28 @@
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Menu, X } from 'lucide-react';
+import { useState } from 'react';
 
 export function Navbar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const navItems = [
     "Services",
     "Process",
     "About",
     "Case Studies"
-  ]
+  ];
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-black border-b border-white/5">
-      <div className="w-full flex items-center justify-between px-6 md:px-12 py-4 md:py-6">
+      <div className="w-full flex items-center justify-between px-6 md:px-12 py-5 md:py-8">
         
         {/* Left Side: Logo */}
         <div className="flex-1 flex items-center justify-start z-10">
           <a href="/">
-            <img src="/logo.png" alt="Stronolink Logo" className="h-10 md:h-12 lg:h-14 w-auto object-contain" />
+            <img src="/logo.png" alt="Stronolink Logo" className="h-12 md:h-14 lg:h-16 w-auto object-contain" />
           </a>
         </div>
 
-        {/* Center: Navigation Links (Absolutely Centered) */}
+        {/* Center: Navigation Links (Absolutely Centered for Desktop) */}
         <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center justify-center gap-8 lg:gap-14 z-20">
           {navItems.map((item) => (
             <a
@@ -32,7 +35,7 @@ export function Navbar() {
           ))}
         </div>
 
-        {/* Right Side: Get in Touch Button */}
+        {/* Right Side: Get in Touch Button (Desktop) */}
         <div className="flex-1 hidden md:flex justify-end z-10">
           <a 
             href="https://cal.com/zarak-khan-5xsdci/30min"
@@ -47,21 +50,47 @@ export function Navbar() {
           </a>
         </div>
 
-        {/* Mobile Navigation (Simplified) */}
-        <div className="bg-black/50 backdrop-blur-md rounded-full px-5 py-2.5 flex md:hidden items-center justify-center gap-6">
+        {/* Mobile Hamburger Button */}
+        <div className="flex-1 flex md:hidden justify-end z-20">
+          <button 
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="text-white p-2"
+          >
+            {isMobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+          </button>
+        </div>
+
+      </div>
+
+      {/* Mobile Menu Overlay */}
+      {isMobileMenuOpen && (
+        <div className="absolute top-full left-0 w-full h-[100vh] bg-black flex flex-col items-center justify-start pt-16 gap-8 px-6 border-t border-white/10 md:hidden">
           {navItems.map((item) => (
             <a
               key={item}
               href={`/#${item.toLowerCase().replace(' ', '-')}`}
-              className="text-[10px] transition-colors duration-200"
-              style={{ color: 'rgba(225, 224, 204, 0.8)' }}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="text-white text-2xl font-medium tracking-tight"
             >
               {item}
             </a>
           ))}
+          
+          <a 
+            href="https://cal.com/zarak-khan-5xsdci/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="mt-8 flex items-center justify-between bg-white rounded-full pl-6 pr-2 py-2 w-full max-w-xs gap-4"
+          >
+            <span className="text-black font-medium text-lg">Get in touch</span>
+            <div className="bg-black rounded-full w-10 h-10 flex items-center justify-center">
+              <ArrowRight className="text-white w-5 h-5" />
+            </div>
+          </a>
         </div>
+      )}
 
-      </div>
     </nav>
   )
 }
