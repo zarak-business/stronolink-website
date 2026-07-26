@@ -31,7 +31,7 @@ export default async function handler(req, res) {
 
   try {
     const executablePath = await chromium.executablePath(
-      'https://github.com/Sparticuz/chromium/releases/download/v123.0.1/chromium-v123.0.1-pack.tar'
+      'https://github.com/Sparticuz/chromium/releases/download/v131.0.1/chromium-v131.0.1-pack.tar'
     );
     
     // CRITICAL FIX FOR VERCEL NODE 20 (Amazon Linux 2023)
