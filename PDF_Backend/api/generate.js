@@ -1,5 +1,6 @@
 const puppeteer = require('puppeteer-core');
 const chromium = require('@sparticuz/chromium-min');
+const path = require('path');
 
 export default async function handler(req, res) {
   // CORS configuration
@@ -32,6 +33,10 @@ export default async function handler(req, res) {
     const executablePath = await chromium.executablePath(
       'https://github.com/Sparticuz/chromium/releases/download/v123.0.1/chromium-v123.0.1-pack.tar'
     );
+    
+    // CRITICAL FIX FOR VERCEL NODE 20 (Amazon Linux 2023)
+    process.env.LD_LIBRARY_PATH = path.dirname(executablePath);
+
     browser = await puppeteer.launch({
       args: chromium.args,
       defaultViewport: chromium.defaultViewport,
