@@ -1,0 +1,13 @@
+{
+  "name": "stronolink-pdf-generator",
+  "version": "1.0.0",
+  "description": "Serverless function to generate PDF from HTML",
+  "main": "api/generate.js",
+  "dependencies": {
+    "@sparticuz/chromium": "^123.0.0",
+    "puppeteer-core": "^22.0.0"
+  },
+  "scripts": {
+    "start": "node api/generate.js"
+  }
+}
