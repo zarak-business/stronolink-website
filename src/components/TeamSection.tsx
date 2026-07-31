@@ -5,7 +5,7 @@ export function TeamSection() {
     {
       name: "Zarak Khan",
       role: "CEO of Stronolink",
-      image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/zarak_portrait.jpeg",
       bio: "As a junior AI engineer and AI agency owner, Zarak previously worked at a data firm based in Philadelphia that serves some of the world’s top pharmaceutical companies. He has extensive experience using automation platforms like Claude Code and Google Antigravity, and as a HubSpot Certified professional, he builds systems that help businesses scale and unlock their full potential."
     },
     {
